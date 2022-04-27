@@ -1,38 +1,164 @@
-.App {
-  text-align: center;
+.nicola {
+    color:red;
 }
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background-color:#e8e8e8;
+    
+    
+}
+button {
+    color: #090909;
+    padding: 0.5em 1.5em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+   }
+   
+   button:hover {
+    border: 1px solid white;
+   }
+   
+   button:active {
+    box-shadow: 4px 4px 12px #c5c5c5,
+                -4px -4px 12px #ffffff;
+   }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+   input {
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #e8e8e8;
+    box-shadow: 6px 6px 12px #ffffff,
+                -6px -6px 12px #c5c5c5;
+    font-size: medium;
+    font-weight: bold;
+    max-width: 200px;
+   }
+   
+   .input:focus {
+    outline-color: white;
+    place-content: "Enter your message!";
+   }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+   .Todo-Input {
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #e8e8e8;
+    box-shadow: 6px 6px 12px #ffffff,
+                -6px -6px 12px #c5c5c5;
+    font-size: medium;
+    font-weight: bold;
+    max-width: 200px;
+   }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+   .Todo-Input:focus {
+    outline-color: white;
+    place-content: "Enter your message!";
+   }
 
-.App-link {
-  color: #61dafb;
-}
+   .Todo {
+    
+        display: flex;
+        align-items: center;
+        margin: 2rem;
+        border: 5px solid grey;
+        border: none;
+        border-radius: 15px;
+        padding: 15px;
+        background-color: #e8e8e8;
+        box-shadow: 6px 6px 12px #ffffff,
+             -6px -6px 12px #c5c5c5;
+        font-size: medium;
+        font-weight: bold;
+ 
+      }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+ 
+   .Todo-Button {
+    color: #090909;
+    padding: 0.3em 1.3em;
+    margin-left:auto;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #eca8a8;
+    border: 1px solid #1a1111;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+   }
+   
+   .Todo-Button:hover {
+    border: 1px solid white;
+   }
+   
+   .Todo-Button:active {
+    box-shadow: 4px 4px 12px #c5c5c5,
+                -4px -4px 12px #ffffff;
+   }
+
+   .switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 62px;
+    height: 35px;
+   }
+   
+   
+   .switch input {
+    opacity: 1;
+    width: 0;
+    height: 0;
+   }
+   
+   
+   .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    background: #fff;
+    transition: .4s;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+   }
+   
+   .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.9em;
+    width: 1.9em;
+    border-radius: 16px;
+    left: 1.2px;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    box-shadow: 0 2px 5px #999999;
+    transition: .4s;
+   }
+   
+   input:checked + .slider {
+    background-color: #5fdd54;
+    border: 1px solid transparent;
+   }
+   
+   input:checked + .slider:before {
+    transform: translateX(1.5em);
+   }
+
+   .todoText {
+       margin-left: 20px;
+       color: green;
+       font-size: 20px;
+   }
